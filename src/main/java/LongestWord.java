@@ -85,7 +85,7 @@ public class LongestWord extends Configured implements Tool {
             }
             // Последующий алгоритм приведет к OOM Error на очень больших выборках. Это противоречит задаче
             //На прмышленной задаче я вернул бы longestWord. Но решил на тестовых объемах поэкспериментировать
-            java.util.Map<String, Text> longestWords = new HashMap<String, Text>();
+            java.util.Map<String, Text> longestWords = new HashMap<>();
 
             Text longestWord = values.iterator().next();
             for (Text val : values) {
